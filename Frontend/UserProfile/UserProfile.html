@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VegePlex - User Profile</title>
+
+    <link rel="stylesheet" href="UserProfile.css">
+    
+    <!-- custom CSS link  -->
+    <link rel="stylesheet" href="/Frontend/Style.css">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+    <div class="profile-card">
+        <div class="avatar">
+            <img src="/Frontend/Pictures/profile_photo.jpg" alt="Not available" srcset="" loading="lazy">
+        </div>
+        <h2 id="user-name">Bittu Rajbanshi</h2>
+        <p id="user-contact">+91 8927834551</p>
+        <p id="user-email">Bittu@vegeplex.com</p>
+        <p id="user-location">Malda, West Bengal</p>
+        <button onclick="toggleEdit()">Edit profile</button>
+        <br><br>
+
+        <div class="dashboard-grid">
+            <div class="dash-item">
+                <a href="/Orders/orders.html" class="dash-item-link">
+                    <i class="fas fa-box"></i>
+                    <span>Orders</span>
+                </a>
+                </div>
+            <div class="dash-item">
+                <a href="../WishList/wishlist.html" class="dash-item-link">
+                    <i class="fas fa-heart"></i>
+                    <span>Wishlist</span>
+                </a>
+                
+                </div>
+            <div class="dash-item">
+                <a href="#" class="dash-item-link">
+                    <i class="fas fa-gift"></i>
+                    <span>Coupons</span>
+                </a>
+                
+                </div>
+            <div class="dash-item">
+                <a href="#" class="dash-item-link">
+                    <i class="fas fa-headset"></i>
+                    <span>Help Center</span>
+                </a>
+            </div>
+        </div>
+        <button>Log out</button>
+    </div>
+
+    <!-- Edit form popup  -->
+     <div class="edit-popup" id="edit-popup">
+        <div class="edit-form">
+            <h3>Edit Profile</h3>
+            <input type="text" id="nameInput" placeholder="Name"/>
+            <input type="text" id="contactInput" placeholder="Mobile Number"/>
+            <input type="email" id="emailInput" placeholder="Email"/>
+            <input type="text" id="locationInput" placeholder="Location"/>
+            <button onclick="saveProfile()">Save</button>
+            <button onclick="toggleEdit()">Cancel</button>
+        </div>
+     </div>
+    <script src="UserProfile.js"></script>
+</body>
+</html>

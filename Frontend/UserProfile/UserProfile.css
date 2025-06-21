@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+:root {
+    --green: #27ae60;
+    --black: #2c2c54;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f7f7f7;
+}
+
+.profile-container {
+    background-color: rgb(143, 218, 248);
+    padding: 2rem;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+    min-height: 70vh;
+    width: 100%;
+    max-width: 80rem;
+}
+
+.profile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: .1rem solid rgba(0, 0, 0, .1);
+}
+
+.profile-header h2 {
+    color: var(--black);
+    font-size: 2.5rem;
+}
+
+.profile-header h2 i {
+    color: var(--green);
+    margin-right: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: .8rem 2rem;
+    font-size: .7rem;
+    color: #fff;
+    background: var(--green);
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: var(--black);
+}
+
+.btn i {
+    margin-right: .5rem;
+}
+
+.cancel-btn {
+    background: #dc3545;
+}
+
+.cancel-btn:hover {
+    background: #c82333;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--black);
+    font-size: 1.7rem;
+}
+
+input {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.6rem;
+    border: .1rem solid rgba(0, 0, 0, .3);
+    border-radius: .5rem;
+    text-transform: none;
+}
+
+input:disabled {
+    background-color: #f8f9fa;
+    cursor: not-allowed;
+}
+
+.button-group {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.account-info {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: .1rem solid rgba(0, 0, 0, .1);
+}
+
+.account-info h3 {
+    color: var(--black);
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.account-info p {
+    font-size: 1.6rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.account-info strong {
+    color: var(--black);
+}
+
+.profile-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 1rem;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid #27ae60;
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-card h2 {
+    color: #2c2c54;
+    margin-bottom: 0.5rem;
+}
+
+.profile-card p {
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.profile-card button {
+    background: #27ae60;
+    color: white;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background 0.3s ease;
+}
+
+.profile-card button:hover {
+    background: #219a52;
+}
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.dash-item {
+    padding: 1rem;
+    border-radius: 10px;
+    background: #f9f9f9;
+    transition: transform 0.3s ease;
+}
+
+.dash-item:hover {
+    transform: translateY(-5px);
+}
+
+.dash-item-link {
+    text-decoration: none;
+    color: #2c2c54;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.dash-item i {
+    font-size: 1.5rem;
+    color: #27ae60;
+}
+
+/* Edit popup styles */
+.edit-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.edit-form {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 400px;
+}
+
+.edit-form h3 {
+    color: #2c2c54;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.edit-form input {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.edit-form button {
+    background: #27ae60;
+    color: white;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0.5rem;
+    transition: background 0.3s ease;
+}
+
+.edit-form button:last-child {
+    background: #e74c3c;
+}
+
+.edit-form button:hover {
+    opacity: 0.9;
+}

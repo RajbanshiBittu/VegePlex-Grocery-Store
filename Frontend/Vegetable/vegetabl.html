@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VegePlex - Vegs</title>
+
+    <link rel="stylesheet" href="../Style.css">
+    <link rel="stylesheet" href="products.css">
+    <link rel="stylesheet" href="../design.css">
+    <link rel="stylesheet" href="../Products/products.css">
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+</head>
+<body>
+    <nav>
+        <div>
+            <a href="/Frontend/Index.html" class="logo">
+            <img src="../Pictures/logo2.jpg" alt="Logo" loading="lazy">
+        </a>
+        </div>
+       <div class="nav-icons">
+            <a href="../WishList/wishlist.html" class="cart-icon">
+                <i class="ri-heart-line"></i>
+                <span class="wishlist-item-count"></span>
+            </a>
+            <a href="../UserCart/cart.html" class="cart-icon">
+                <i class="ri-shopping-cart-line"></i>
+                <span class="cart-item-count"></span>
+            </a>
+       </div>
+    </nav>
+    <section class="product-collection">
+        <h1>VegePlex-Vegetables</h1>
+        <div class="product-list">
+            <!-- dynamically data is listed here  -->
+        </div>
+    </section>
+    <script src="vegetable.js"></script>
+    <script src="../Logic.js"></script>
+    <script src="../Product.js"></script>
+    <script type="module" src="../Script.js"></script>
+    <script src="../Products/Script.js"></script>
+</body>
+</html>
